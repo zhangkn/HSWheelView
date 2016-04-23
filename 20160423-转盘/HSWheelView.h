@@ -17,6 +17,8 @@
  通过数据模型设置视图内容，可以让视图控制器不需要了解视图的细节
  */
 //+ (instancetype) tableVieCellWith<#model#>:(<#ModelClass#> *) <#model#> <#View#>:(<#UIView#> *)<#view#>;//使用类方法加载xib,参数用于视图的数据装配
+- (void) startRotating;
+- (void) stopRotating;
 
 
 @end

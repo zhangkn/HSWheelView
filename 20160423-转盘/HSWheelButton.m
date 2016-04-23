@@ -32,5 +32,10 @@
     CGFloat y =20;
     return CGRectMake(x, y, imageWidth, imageHeight);
 }
-
+/**
+ determines whether the receiver is highlighted.
+ */
+- (void)setHighlighted:(BOOL)highlighted{//不做任何事情的时候，可以去掉按钮的高亮状态的一些效果
+    
+}
 @end

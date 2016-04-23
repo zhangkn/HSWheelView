@@ -21,6 +21,9 @@
                     <rect key="frame" x="103" y="102" width="81" height="81"/>
                     <state key="normal" image="LuckyCenterButton"/>
                     <state key="highlighted" image="LuckyCenterButtonPressed"/>
+                    <connections>
+                        <action selector="chooseNO:" destination="iN0-l3-epB" eventType="touchUpInside" id="3b1-hS-p72"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

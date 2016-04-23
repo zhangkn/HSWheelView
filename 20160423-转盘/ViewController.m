@@ -10,15 +10,31 @@
 #import "HSWheelView.h"
 
 @interface ViewController ()
+@property (nonatomic,weak) HSWheelView *wheelView;
 
 @end
 
 @implementation ViewController
 
+- (HSWheelView *)wheelView{
+    if (nil == _wheelView) {
+        HSWheelView *tmpView = [HSWheelView wheelViewWithTableView:self.view];
+        _wheelView = tmpView;
+    }
+    return _wheelView;
+}
+- (IBAction)startRotating:(id)sender {
+    [self.wheelView startRotating];
+    
+}
+- (IBAction)stopRotating:(id)sender {
+    [self.wheelView stopRotating];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    HSWheelView *wheelView = [HSWheelView wheelViewWithTableView:self.view];
-    [wheelView setCenter:self.view.center];
+    [self.wheelView setCenter:self.view.center];
 }
 
 - (void)didReceiveMemoryWarning {
