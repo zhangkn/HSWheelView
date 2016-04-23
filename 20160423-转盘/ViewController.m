@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HSWheelView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    HSWheelView *wheelView = [HSWheelView wheelViewWithTableView:self.view];
+    [wheelView setCenter:self.view.center];
 }
 
 - (void)didReceiveMemoryWarning {

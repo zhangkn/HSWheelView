@@ -15,6 +15,9 @@
 		E11978001CCB57FB00F893CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11977FE1CCB57FB00F893CB /* LaunchScreen.storyboard */; };
 		E119780B1CCB57FB00F893CB /* _0160423___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E119780A1CCB57FB00F893CB /* _0160423___Tests.m */; };
 		E11978161CCB57FB00F893CB /* _0160423___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E11978151CCB57FB00F893CB /* _0160423___UITests.m */; };
+		E11978291CCB584200F893CB /* HSWheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = E11978281CCB584200F893CB /* HSWheelView.m */; };
+		E119782B1CCB585300F893CB /* HSWheelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E119782A1CCB585300F893CB /* HSWheelView.xib */; };
+		E119782E1CCB760100F893CB /* HSWheelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E119782D1CCB760100F893CB /* HSWheelButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		E11978111CCB57FB00F893CB /* 20160423-转盘UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20160423-转盘UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E11978151CCB57FB00F893CB /* _0160423___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_0160423___UITests.m"; sourceTree = "<group>"; };
 		E11978171CCB57FB00F893CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11978271CCB584200F893CB /* HSWheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSWheelView.h; sourceTree = "<group>"; };
+		E11978281CCB584200F893CB /* HSWheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSWheelView.m; sourceTree = "<group>"; };
+		E119782A1CCB585300F893CB /* HSWheelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSWheelView.xib; sourceTree = "<group>"; };
+		E119782C1CCB760100F893CB /* HSWheelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSWheelButton.h; sourceTree = "<group>"; };
+		E119782D1CCB760100F893CB /* HSWheelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSWheelButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +109,7 @@
 		E11977EF1CCB57FB00F893CB /* 20160423-转盘 */ = {
 			isa = PBXGroup;
 			children = (
-				E11977F31CCB57FB00F893CB /* AppDelegate.h */,
-				E11977F41CCB57FB00F893CB /* AppDelegate.m */,
-				E11977F61CCB57FB00F893CB /* ViewController.h */,
-				E11977F71CCB57FB00F893CB /* ViewController.m */,
-				E11977F91CCB57FB00F893CB /* Main.storyboard */,
-				E11977FC1CCB57FB00F893CB /* Assets.xcassets */,
-				E11977FE1CCB57FB00F893CB /* LaunchScreen.storyboard */,
-				E11978011CCB57FB00F893CB /* Info.plist */,
+				E11978251CCB582300F893CB /* Classes */,
 				E11977F01CCB57FB00F893CB /* Supporting Files */,
 			);
 			path = "20160423-转盘";
@@ -117,6 +118,10 @@
 		E11977F01CCB57FB00F893CB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E11977F91CCB57FB00F893CB /* Main.storyboard */,
+				E11977FC1CCB57FB00F893CB /* Assets.xcassets */,
+				E11977FE1CCB57FB00F893CB /* LaunchScreen.storyboard */,
+				E11978011CCB57FB00F893CB /* Info.plist */,
 				E11977F11CCB57FB00F893CB /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +143,46 @@
 				E11978171CCB57FB00F893CB /* Info.plist */,
 			);
 			path = "20160423-转盘UITests";
+			sourceTree = "<group>";
+		};
+		E11978231CCB580100F893CB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E11977F61CCB57FB00F893CB /* ViewController.h */,
+				E11977F71CCB57FB00F893CB /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E11978241CCB581E00F893CB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E11977F31CCB57FB00F893CB /* AppDelegate.h */,
+				E11977F41CCB57FB00F893CB /* AppDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		E11978251CCB582300F893CB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E11978261CCB582A00F893CB /* View */,
+				E11978241CCB581E00F893CB /* Other */,
+				E11978231CCB580100F893CB /* Controller */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E11978261CCB582A00F893CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E11978271CCB584200F893CB /* HSWheelView.h */,
+				E119782A1CCB585300F893CB /* HSWheelView.xib */,
+				E11978281CCB584200F893CB /* HSWheelView.m */,
+				E119782C1CCB760100F893CB /* HSWheelButton.h */,
+				E119782D1CCB760100F893CB /* HSWheelButton.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +291,7 @@
 				E11978001CCB57FB00F893CB /* LaunchScreen.storyboard in Resources */,
 				E11977FD1CCB57FB00F893CB /* Assets.xcassets in Resources */,
 				E11977FB1CCB57FB00F893CB /* Main.storyboard in Resources */,
+				E119782B1CCB585300F893CB /* HSWheelView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +316,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E119782E1CCB760100F893CB /* HSWheelButton.m in Sources */,
 				E11977F81CCB57FB00F893CB /* ViewController.m in Sources */,
 				E11977F51CCB57FB00F893CB /* AppDelegate.m in Sources */,
 				E11977F21CCB57FB00F893CB /* main.m in Sources */,
+				E11978291CCB584200F893CB /* HSWheelView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +544,7 @@
 				E119781C1CCB57FB00F893CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E119781D1CCB57FB00F893CB /* Build configuration list for PBXNativeTarget "20160423-转盘Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +553,7 @@
 				E119781F1CCB57FB00F893CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E11978201CCB57FB00F893CB /* Build configuration list for PBXNativeTarget "20160423-转盘UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +562,7 @@
 				E11978221CCB57FB00F893CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
