@@ -252,6 +252,7 @@
 				TargetAttributes = {
 					E11977EC1CCB57FB00F893CB = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = FUV5KWMMAV;
 					};
 					E11978051CCB57FB00F893CB = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -459,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FUV5KWMMAV;
 				INFOPLIST_FILE = "20160423-转盘/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hisunpay.www.-0160423---";
@@ -470,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FUV5KWMMAV;
 				INFOPLIST_FILE = "20160423-转盘/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hisunpay.www.-0160423---";
